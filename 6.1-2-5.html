@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>6.1 Замена картинок </title>
 </head>
 
@@ -23,7 +24,21 @@
     2. Затем с помощью цикла пройдитесь по этой коллекции, и обращаясь к
     каждому элементу, обратитесь к его свойству style, а затем к свойству
     padding. -->
+    <form action="">
+        <input type="text"><br>
+        <input type="text"><br>
+        <input type="text"><br>
+        <input type="text"><br>
+    </form>
 
+    <!-- 
+        Задание. Сделайте, чтобы у всех инпутов снизу был внешний отступ (margin-bottom).
+        1. Получите все инпуты, например с помощью querySelectorAll
+        2. Переберите полученную коллекцию например с помощью forEach
+            2.1 У функции-обработчика, которая будет передаваться в forEach определите
+            параметр input
+            2.2 Чтобы менять стили обращайтесь к свойству style у параметра input
+    -->
     <script>
         "use strict";
         let images = document.querySelector("img");
@@ -31,6 +46,10 @@
         let div = document.getElementsByTagName("div");
         console.log(div);
        Array.from(div).forEach((item) => item.setAttribute("style", "padding:10px"));
+      
+       let input=document.getElementsByTagName("input");
+       Array.from(input).forEach((item)=>item.style.padding='25px');
+       Array.from(input).forEach((item)=>item.setAttribute("style", "margin-bottom:25px"));
     </script>
 
 </html>

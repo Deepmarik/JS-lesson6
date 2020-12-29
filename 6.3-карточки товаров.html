@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>6.3-карточки товаров</title>
 </head>
 
@@ -46,6 +47,7 @@
     <script>
         "use strict";
         const product = document.getElementsByClassName("product");
+
         Array.from(product).forEach((item) => item.setAttribute("style", "background-color:#FCE85F"));
         const productName=document.getElementsByClassName("productName");
         Array.from(productName).forEach((item)=>item.setAttribute("style", "font-size:24px"));
