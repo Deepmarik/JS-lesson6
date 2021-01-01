@@ -18,3 +18,11 @@ form input {
     border: 1px solid orange;
     display: none;
 }
+
+i {
+    font-size: 50px;
+}
+
+.golden {
+    color: #ffd700;
+}
